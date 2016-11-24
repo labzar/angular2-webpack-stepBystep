@@ -29,15 +29,28 @@ Roughly put bundlers take assets, such as JavaScript files in, and then transfor
 Bundlers can work in tandem with task runners. You can still benefit from their higher level tooling while leaving the problem of bundling to more specialized tools.
 
 # Configuring Webpack
+Begin by setting up the development environment.
+
+Create a new **project folder**
+
+COPY CODE
+mkdir angular-webpack
+cd    angular-webpack
+Add these files to the root directory (you can take it from our repository):
+- package.json
+- tsconfig.json
+- webpack.config.js
+- karma.conf.js
+- config/helpers.js
 ## Common configuration
 ## Development configuration
 ## Production configuration
 ## Test configuration
 
-## QUICKSTART
+# QUICKSTART
 The QuickStart application has the structure of a real-world Angular application and displays the simple message: Hellooo World :)
 **Prerequisite: Install Node.js and npm**
 
 If Node.js and npm aren't already on your machine, install them. Our examples require node v4.x.x or higher and npm 3.x.x or higher. To check which version you are using, run node -v and npm -v in a terminal window.
 
-**Step 1: Create and configure the project**
+## Step 1: Create and configure the project**
