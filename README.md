@@ -34,8 +34,12 @@ Begin by setting up the development environment.
 Create a new **project folder**
 
 COPY CODE
-mkdir angular-webpack
-cd    angular-webpack
+```
+mkdir angular-webpack-stepBystep
+``` 
+``` 
+cd angular-webpack-stepBystep
+```
 Add these files to the root directory (you can take it from our repository):
 - package.json
 - tsconfig.json
