@@ -97,10 +97,64 @@ Webpack can separate the App code from vendor code with CommonsChunkPlugin
 **HTMLWEBPACKPLUGIN:**
 Webpack can inject scripts and links for us with the HtmlWebpackPlugin.
 
-
 ## Development configuration
+The development build relies on the Webpack development server which we configure near the bottom of the file.
+
+Although we tell Webpack to put output bundles in the dist folder, the dev server keeps all bundles in memory; it doesn't write them to disk. So we won't find any files in the dist folder (at least not any generated from this development build).
+```
+output: {
+    path: helpers.root('dist'),
+    publicPath: 'http://localhost:8080/',
+    filename: '[name].js',
+    chunkFilename: '[id].chunk.js'
+  },
+```
+Grab the app code at the end of this guide and try:
+
+COPY CODE
+```
+npm start
+```
+
 ## Production configuration
+Configuration of a production build resembles development configuration ... with a few key changes.
+
+```
+output: {
+    path: helpers.root('dist'),
+    publicPath: '/',
+    filename: '[name].[hash].js',
+    chunkFilename: '[id].[hash].chunk.js'
+  },
+```
+and we add additional plugins:
+
+**NoErrorsPlugin** - stops the build if there is any error.
+**DedupePlugin** - detects identical (and nearly identical) files and removes them from the output.
+**UglifyJsPlugin** - minifies the bundles.
+**ExtractTextPlugin** - extracts embedded css as external files, adding cache-busting hash to the filename.
+**DefinePlugin** - use to define environment variables that we can reference within our application.
+
+Grab the app code at the end of this guide and try:
+
+COPY CODE
+```
+npm run build
+```
+
 ## Test configuration
+The purpose of webpack.test.js is to run and configure test.
+we have three main files:
+- config/webpack.test.js
+- config/karma.conf.js
+- config/karma-test-shim.js
+
+Grab the app code at the end of this guide and try:
+
+COPY CODE
+```
+npm test
+```
 
 # QUICKSTART
 The QuickStart application has the structure of a real-world Angular application and displays the simple message: Hellooo World :)
