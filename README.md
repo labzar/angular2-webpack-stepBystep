@@ -143,7 +143,7 @@ npm run build
 ```
 
 ## Test configuration
-The purpose of webpack.test.js is to run and configure test.
+The purpose of webpack.test.js is to runs and configures test.
 we have three main files:
 - config/webpack.test.js
 - config/karma.conf.js
