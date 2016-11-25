@@ -46,7 +46,42 @@ Add these files to the root directory (you can take it from our repository):
 - webpack.config.js
 - karma.conf.js
 - config/helpers.js
+
 ## Common configuration
+Webpack is a NodeJS-based tool so its configuration is a JavaScript commonjs module file that begins with require statements as such files do.
+
+**webpack.common.js** will contains the common configuration between development, production, and test environments.
+if you take a look inside webpack.common.js you will see three principale parts:
+First we specify the entry:
+```
+entry: {
+  'polyfills': './src/polyfills.ts',
+  'vendor': './src/vendor.ts',
+  'app': './src/main.ts'
+},
+```
+`we are splitting our application into three bundles:
+- **polyfills** - the standard polyfills we require to run Angular applications in most modern browsers.
+- **vendor** - the vendor files we need: Angular, lodash, bootstrap.css...
+- **app** - our application code.`
+
+Next we specify the loaders:
+```
+module: {
+    loaders: [
+      {
+        test: /\.ts$/,
+        loaders: ['awesome-typescript-loader', 'angular2-template-loader']
+      },
+      {
+        test: /\.html$/,
+        loader: 'html'
+      },
+      ...
+      }
+```
+
+
 ## Development configuration
 ## Production configuration
 ## Test configuration
