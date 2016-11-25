@@ -60,10 +60,10 @@ entry: {
   'app': './src/main.ts'
 },
 ```
-`we are splitting our application into three bundles:
+we are splitting our application into three bundles:
 - **polyfills** - the standard polyfills we require to run Angular applications in most modern browsers.
 - **vendor** - the vendor files we need: Angular, lodash, bootstrap.css...
-- **app** - our application code.`
+- **app** - our application code.
 
 Next we specify the loaders:
 ```
@@ -80,6 +80,22 @@ module: {
       ...
       }
 ```
+Finally we add two plugins:
+```
+plugins: [
+  new webpack.optimize.CommonsChunkPlugin({
+    name: ['app', 'vendor', 'polyfills']
+  }),
+
+  new HtmlWebpackPlugin({
+    template: 'src/index.html'
+  })
+]
+```
+**COMMONSCHUNKPLUGIN:**
+Webpack can separate the App code from vendor code with CommonsChunkPlugin
+**HTMLWEBPACKPLUGIN:**
+Webpack can inject scripts and links for us with the HtmlWebpackPlugin.
 
 
 ## Development configuration
