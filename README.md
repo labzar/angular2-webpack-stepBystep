@@ -55,7 +55,7 @@ angular2-webpack-stepBystep/
  ├──karma.conf.js              * contains a shortcut to our karma.conf.js located in config folder
  └──webpack.config.js          * contains a shortcut to our webpack.dev.js located in config folder
 ```
-<a name="What-is-the-difference-between-Angular1-and-Angular2?"/>
+<a name="What-is-the-difference-between-Angular1-and-Angular2"/>
 # What is the difference between Angular1 and Angular2?
 I pointed here some major difference between angular 1 and angular 2 that every one should know.
 
