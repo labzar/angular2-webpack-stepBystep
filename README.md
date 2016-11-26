@@ -2,6 +2,46 @@
 
 # Table of Contents
 # File Structure
+```
+angular2-webpack-stepBystep/
+ ├──config/                    * our configuration
+ |   ├──helpers.js             * helper functions for our configuration files
+ |   ├──karma-test-shim.js     * tells Karma what files to pre-load
+ |   ├──karma.conf.js          * karma config for our unit tests
+ |   ├──webpack.common.js      * contains the common configuration between development, production, and test environments
+ │   ├──webpack.dev.js         * our development webpack config
+ │   ├──webpack.prod.js        * our production webpack config
+ │   └──webpack.test.js        * our testing webpack config
+ │
+ ├──src/                       * our source files that will be compiled to javascript
+ |   ├──main.ts        * our entry file for our browser environment
+ │   │
+ |   ├──vendor.ts      * our vendor file
+ |   |
+ |   ├──polyfills.ts           * our polyfills file
+ │   │
+ |   ├──index.html             * Index.html: where we generate our index page
+ │   │
+ │   │
+ │   ├──app/                   * WebApp: folder
+ │   │   ├──app.spec.ts        * a simple test of components in app.ts
+ │   │   ├──app.e2e.ts         * a simple end-to-end test for /
+ │   │   └──app.ts             * App.ts: a simple version of our App component components
+ │   │
+ │   └──assets/                * static assets are served here
+ │       ├──icon/              * our list of icons from www.favicon-generator.org
+ │       ├──service-worker.js  * ignore this. Web App service worker that's not complete yet
+ │       ├──robots.txt         * for search engines to crawl your website
+ │       └──humans.txt          * for humans to know who the developers are
+ │
+ │
+ ├──tslint.json                * typescript lint config
+ ├──typedoc.json               * typescript documentation generator
+ ├──tsconfig.json              * config that webpack uses for typescript
+ ├──package.json               * what npm uses to manage it's dependencies
+ └──webpack.config.js          * webpack main configuration file
+
+```
 # What is the difference between Angular1 and Angular2?
 I pointed here some major difference between angular 1 and angular 2 that every one should know.
 
