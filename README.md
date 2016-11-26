@@ -8,7 +8,7 @@ angular2-webpack-stepBystep/
  |   ├──helpers.js             * helper functions for our configuration files
  |   ├──karma-test-shim.js     * tells Karma what files to pre-load
  |   ├──karma.conf.js          * karma config for our unit tests
- |   ├──webpack.common.js      * contains the common configuration between development, production, and test environments
+ |   ├──webpack.common.js      * contains the common configuration between dev, prod, and test environments
  │   ├──webpack.dev.js         * our development webpack config
  │   ├──webpack.prod.js        * our production webpack config
  │   └──webpack.test.js        * our testing webpack config
@@ -197,9 +197,17 @@ npm test
 ```
 
 # QUICKSTART
-The QuickStart application has the structure of a real-world Angular application and displays the simple message: Hellooo World :)
+The QuickStart application has the structure of a real-world Angular application and displays the simple message: Hello from angular app with webpack.
+
 **Prerequisite: Install Node.js and npm**
 
 If Node.js and npm aren't already on your machine, install them. Our examples require node v4.x.x or higher and npm 3.x.x or higher. To check which version you are using, run node -v and npm -v in a terminal window.
 
-## Step 1: Create and configure the project**
+Run CODE **npm install** to install packages:
+```
+npm install
+```
+Run CODE **npm start** to run server on mode dev:
+```
+npm start
+```
