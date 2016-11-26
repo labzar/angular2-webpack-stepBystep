@@ -23,23 +23,23 @@ angular2-webpack-stepBystep/
  |   ├──index.html             * Index.html: where we generate our index page
  │   │
  │   │
- │   ├──app/                   * WebApp: folder
- │   │   ├──app.spec.ts        * a simple test of components in app.ts
- │   │   ├──app.e2e.ts         * a simple end-to-end test for /
- │   │   └──app.ts             * App.ts: a simple version of our App component components
+ │   ├──app/                       * WebApp: folder
+ │   │   ├──app.component.css      * a simple css of components in app.component.ts
+ │   │   ├──app.component.html     * a simple html of components in app.component.ts
+ │   │   ├──app.component.ts       * a simple version of our App component
+ │   │   ├──app.component.spec.ts  * a simple test of components in app.component.ts
+ │   │   └──app.module.ts          * app.module.ts: a simple version of our App module
  │   │
- │   └──assets/                * static assets are served here
- │       ├──icon/              * our list of icons from www.favicon-generator.org
- │       ├──service-worker.js  * ignore this. Web App service worker that's not complete yet
- │       ├──robots.txt         * for search engines to crawl your website
- │       └──humans.txt          * for humans to know who the developers are
+ │   └──public/                * static stuf are served here
+ │       ├──css/              
+ │       └──image/  
  │
  │
- ├──tslint.json                * typescript lint config
- ├──typedoc.json               * typescript documentation generator
  ├──tsconfig.json              * config that webpack uses for typescript
  ├──package.json               * what npm uses to manage it's dependencies
- └──webpack.config.js          * webpack main configuration file
+ ├──karma.conf.js              * contains a shortcut to our karma.conf.js located in config folder
+ └──webpack.config.js          * contains a shortcut to our webpack.dev.js located in config folder
+ 
 
 ```
 # What is the difference between Angular1 and Angular2?
