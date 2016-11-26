@@ -1,8 +1,9 @@
 # angular2-webpack-stepBystep
 
 # Table of Contents
-* [What is the difference between Angular1 and Angular2?] (#what-is-the-difference-between-Angular1-and-Angular2?)
-* [What is Webpack?](#what-is-Webpack?)
+* [File Structure](#file-structure)
+* [What is the difference between Angular1 and Angular2?] (#What-is-the-difference-between-Angular1-and-Angular2?)
+* [What is Webpack?](#What-is-Webpack?)
 * [What is Webpack?](#What is Webpack?)
      * [Why webpack?](#Why webpack?)
      * [What Are Task Runners?](#What Are Task Runners?)
@@ -14,6 +15,7 @@
      * [Test configuration](#Test configuration)
 * [QUICKSTART](#QUICKSTART)
 
+<a name="file-structure"/>
 # File Structure
 ```
 angular2-webpack-stepBystep/
@@ -52,9 +54,8 @@ angular2-webpack-stepBystep/
  ├──package.json               * what npm uses to manage it's dependencies
  ├──karma.conf.js              * contains a shortcut to our karma.conf.js located in config folder
  └──webpack.config.js          * contains a shortcut to our webpack.dev.js located in config folder
- 
-
 ```
+<a name="What-is-the-difference-between-Angular1-and-Angular2?"/>
 # What is the difference between Angular1 and Angular2?
 I pointed here some major difference between angular 1 and angular 2 that every one should know.
 
