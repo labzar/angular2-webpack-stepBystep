@@ -1,8 +1,8 @@
 # angular2-webpack-stepBystep
 
 # Table of Contents
-* [What is the difference between Angular1 and Angular2?] (#What-is-the-difference-between-Angular1-and-Angular2?)
-* [What is Webpack?](#What is Webpack?)
+* [What is the difference between Angular1 and Angular2?] (#what-is-the-difference-between-Angular1-and-Angular2?)
+* [What is Webpack?](#what-is-Webpack?)
 * [What is Webpack?](#What is Webpack?)
      * [Why webpack?](#Why webpack?)
      * [What Are Task Runners?](#What Are Task Runners?)
