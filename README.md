@@ -2,7 +2,7 @@
 
 # Table of Contents
 * [File Structure](#file-structure)
-* [What is the difference between Angular1 and Angular2?] (#What-is-the-difference-between-Angular1-and-Angular2)
+* [What is the difference between Angular1 and Angular2?](#What-is-the-difference-between-Angular1-and-Angular2)
 * [What is Webpack?](#What-is-Webpack)
 * [Why webpack?](#Why-webpack)
      * [Why webpack?](#Why-webpack?)
@@ -16,6 +16,7 @@
 * [QUICKSTART](#QUICKSTART)
 
 <a name="file-structure"/>
+
 # File Structure
 
 ```
@@ -57,6 +58,7 @@ angular2-webpack-stepBystep/
  └──webpack.config.js          * contains a shortcut to our webpack.dev.js located in config folder
 ```
 <a name="What-is-the-difference-between-Angular1-and-Angular2"/>
+
 # What is the difference between Angular1 and Angular2?
 I pointed here some major difference between angular 1 and angular 2 that every one should know.
 
