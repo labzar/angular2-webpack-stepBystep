@@ -17,6 +17,7 @@
 
 <a name="file-structure"/>
 # File Structure
+
 ```
 angular2-webpack-stepBystep/
  ├──config/                    * our configuration
