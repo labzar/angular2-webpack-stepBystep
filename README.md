@@ -1,4 +1,4 @@
-# angular2-webpack-stepBystep
+# Angular2-webpack-stepBystep
 
 # Table of Contents
 * [File Structure](#file-structure)
@@ -71,25 +71,30 @@ First thing, Angular 2 is not the upgrade of angular 1. Angular 2 is completely 
 ![alt tag](https://qph.ec.quoracdn.net/main-qimg-c9beed549d710c65b99fe8799ef5123f?convert_to_webp=true)
 
 <a name="What-is-Webpack"/>
+
 # What is Webpack?
 Webpack takes modules with dependencies and generates static assets representing those modules :shipit:
 ![alt tag](http://webpack.github.io/assets/what-is-webpack.png)
 
 <a name="Why-webpack"/>
+
 ## Why webpack?
 webpack is usually compared to tools like Make, Grunt, Gulp, Browserify or Brunch. However, some of these tools (Make, Grunt, and Gulp, which are task runners) have a much different purpose than webpack, which is a module bundler. Comparing them directly could lead to sorts of confusion, so let’s first draw a distinction between these types of tools.
 
 <a name="What-Are-Task-Runners"/>
+
 ## What Are Task Runners?
 Task runners literally make it easier to handle tasks, such as linting, building, or developing your project. Compared to bundlers like Browserify, Brunch, or webpack, they have a higher level focus. Bundlers, on the other hand, have a much more specific goal.
 
 <a name="What-Are-Bundlers"/>
+
 ## What Are Bundlers?
 Roughly put bundlers take assets, such as JavaScript files in, and then transform them into format that's suitable for the browser of the end user to consume. This process of bundling happens to be one of the most important problems in web development and solving it well you can remove a large part of pain from the process.
 
 Bundlers can work in tandem with task runners. You can still benefit from their higher level tooling while leaving the problem of bundling to more specialized tools.
 
 <a name="Configuring-Webpack"/>
+
 # Configuring Webpack
 Begin by setting up the development environment.
 
@@ -110,6 +115,7 @@ Add these files to the root directory (you can take it from our repository):
 - config/helpers.js
 
 <a name="Common-configuration"/>
+
 ## Common configuration
 Webpack is a NodeJS-based tool so its configuration is a JavaScript commonjs module file that begins with require statements as such files do.
 
@@ -161,6 +167,7 @@ Webpack can separate the App code from vendor code with CommonsChunkPlugin
 Webpack can inject scripts and links for us with the HtmlWebpackPlugin.
 
 <a name="Development-configuration"/>
+
 ## Development configuration
 The development build relies on the Webpack development server which we configure near the bottom of the file.
 
@@ -180,6 +187,7 @@ COPY CODE
 npm start
 ```
 <a name="Production-configuration"/>
+
 ## Production configuration
 Configuration of a production build resembles development configuration ... with a few key changes.
 
@@ -207,6 +215,7 @@ npm run build
 ```
 
 <a name="Test-configuration"/>
+
 ## Test configuration
 The purpose of webpack.test.js is to runs and configures test.
 we have three main files:
@@ -221,6 +230,7 @@ COPY CODE
 npm test
 ```
 <a name="QUICKSTART"/>
+
 # QUICKSTART
 The QuickStart application has the structure of a real-world Angular application and displays the simple message: Hello from angular app with webpack.
 
